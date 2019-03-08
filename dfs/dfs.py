@@ -25,7 +25,7 @@ class Graph(object):
         edgeF = Edge(v, w)
         self.adj[u].append(edgeF)
 
-        if self.directed:
+        if not self.directed:
             edgeB = Edge(u, w)
             self.adj[v].append(edgeB)
 
